@@ -1,6 +1,6 @@
-package com.api.mapeamentosHibernate.repositories.OneToManyAndManyToOne;
+package com.api.mapeamentosHibernate.repositories.oneToManyAndManyToOne;
 
-import com.api.mapeamentosHibernate.models.onToManyAndManyToOne.Person;
+import com.api.mapeamentosHibernate.models.oneToManyAndManyToOne.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

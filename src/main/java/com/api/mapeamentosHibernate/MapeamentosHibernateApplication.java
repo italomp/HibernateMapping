@@ -1,12 +1,12 @@
 package com.api.mapeamentosHibernate;
 
-import com.api.mapeamentosHibernate.models.onToManyAndManyToOne.Person;
-import com.api.mapeamentosHibernate.models.onToManyAndManyToOne.Phone;
+import com.api.mapeamentosHibernate.models.oneToManyAndManyToOne.Person;
+import com.api.mapeamentosHibernate.models.oneToManyAndManyToOne.Phone;
 import com.api.mapeamentosHibernate.models.oneToOneBidirectional.Address2;
 import com.api.mapeamentosHibernate.models.oneToOneBidirectional.Employee2;
 import com.api.mapeamentosHibernate.models.oneToOneUnidirectional.Address1;
 import com.api.mapeamentosHibernate.models.oneToOneUnidirectional.Employee1;
-import com.api.mapeamentosHibernate.repositories.OneToManyAndManyToOne.PersonRepository;
+import com.api.mapeamentosHibernate.repositories.oneToManyAndManyToOne.PersonRepository;
 import com.api.mapeamentosHibernate.repositories.oneToOneBidirectional.Employee2Repository;
 import com.api.mapeamentosHibernate.repositories.oneToOneUnidirectional.Employee1Repository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,5 +58,7 @@ public class MapeamentosHibernateApplication implements CommandLineRunner {
 		person.setPhoneList(phoneList);
 
 		this.personRepository.save(person);
+
+		// MANY TO MANY
 	}
 }

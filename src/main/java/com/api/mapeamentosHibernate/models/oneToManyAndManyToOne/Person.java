@@ -1,4 +1,4 @@
-package com.api.mapeamentosHibernate.models.onToManyAndManyToOne;
+package com.api.mapeamentosHibernate.models.oneToManyAndManyToOne;
 
 import org.hibernate.annotations.Cascade;
 
